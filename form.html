@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login and Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+          
+</head>
+<body>
+       
+    <div class="login-page">
+        <div class="form">
+            <form class="register-form">
+                <input  type="text" placeholder="First Name" id="fname"/>
+                <input  type="text" placeholder="Last Name" id="lname"/>
+                <input  type="email" placeholder="E-Mail" id="eid"/>
+                <input  type="number" placeholder="Phone" id="phno"/>
+                <button onclick="validateForm()"> Submit </button>
+                <button> Reset </button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<script> 
+        function validateForm()                                    
+        { debugger;
+            var name1=document.getElementById("fname").value;
+            var name2=document.getElementById("lname").value;
+            var email=document.getElementById("eid").value;
+            var phone=document.getElementById("phno").value;
+            if(name1=="")
+            {
+                alert("Enter your first name!");
+            }
+            else if(name2=="")
+            {
+                alert("Enter your last name!")
+            }
+            else if(email=="")
+            {
+                alert("Enter your email id!")
+            }
+            else if(phone=="")
+            {
+                alert("Enter you phone number!")
+            }
+        }
+</script> 
